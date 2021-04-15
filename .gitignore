@@ -1,0 +1,8 @@
+influxdb/*
+
+**/node_modules
+**/data
+**/@eaDir
+
+.env
+.DS_Store

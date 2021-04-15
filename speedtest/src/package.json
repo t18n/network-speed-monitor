@@ -1,0 +1,11 @@
+{
+  "name": "network-speedtest-monitor",
+  "version": "0.0.1",
+  "author": "Turbo Thinh",
+  "license": "MIT",
+  "dependencies": {
+    "node-cron": "^3.0.0",
+    "execa": "^5.0.0",
+    "influx": "^5.8.0"
+  }
+}
