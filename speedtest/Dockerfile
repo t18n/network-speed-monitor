@@ -7,8 +7,7 @@ RUN npm install
 
 RUN apt-get update -y
 RUN apt-get install -y gnupg1 apt-transport-https dirmngr iputils-ping
-RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 379CE192D401AB61
-RUN echo "deb https://ookla.bintray.com/debian generic main" | tee /etc/apt/sources.list.d/speedtest.list
+RUN curl -s https://install.speedtest.net/app/cli/install.deb.sh | bash
 RUN apt-get update
 RUN apt-get install speedtest
 
