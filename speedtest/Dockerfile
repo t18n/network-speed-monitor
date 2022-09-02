@@ -7,7 +7,7 @@ RUN npm install
 
 RUN apt-get update -y
 RUN apt-get install -y gnupg1 apt-transport-https dirmngr iputils-ping
-RUN curl -s https://install.speedtest.net/app/cli/install.deb.sh | bash
+RUN curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | bash
 RUN apt-get update
 RUN apt-get install speedtest
 
